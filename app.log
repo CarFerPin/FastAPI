@@ -1,0 +1,518 @@
+2025-04-04 05:50:31,480 - INFO - Request: GET http://localhost:7000/openapi.json
+2025-04-04 05:50:31,480 - INFO - Headers: {'host': 'localhost:7000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0', 'accept': 'application/json,*/*', 'accept-language': 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://localhost:7000/docs', 'dnt': '1', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'sec-gpc': '1', 'priority': 'u=4'}
+2025-04-04 05:50:31,497 - INFO - Response status: 200
+2025-04-04 05:50:31,498 - INFO - Process time: 0.017322 seconds
+2025-04-04 05:50:44,157 - INFO - Request: POST http://localhost:7000/token
+2025-04-04 05:50:44,157 - INFO - Headers: {'host': 'localhost:7000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0', 'accept': 'application/json, text/plain, */*', 'accept-language': 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://localhost:7000/docs', 'content-type': 'application/x-www-form-urlencoded', 'x-requested-with': 'XMLHttpRequest', 'authorization': 'Basic Og==', 'content-length': '51', 'origin': 'http://localhost:7000', 'dnt': '1', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'sec-gpc': '1', 'priority': 'u=0'}
+2025-04-04 05:50:44,157 - INFO - Body: grant_type=password&username=carlos&password=secret
+2025-04-04 05:50:44,408 - INFO - Response status: 200
+2025-04-04 05:50:44,408 - INFO - Process time: 0.250204 seconds
+2025-04-04 05:50:54,278 - INFO - Request: GET http://localhost:7000/api/items/
+2025-04-04 05:50:54,278 - INFO - Headers: {'host': 'localhost:7000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0', 'accept': 'application/json', 'accept-language': 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://localhost:7000/docs', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJjYXJsb3MiLCJleHAiOjE3NDM3NjU2NDR9.xloKSdLMwKnioZFmvCU72i55ElB22iedRBAe_0eyQi8', 'dnt': '1', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'sec-gpc': '1', 'priority': 'u=0'}
+2025-04-04 05:50:54,283 - INFO - Response status: 200
+2025-04-04 05:50:54,283 - INFO - Process time: 0.004946 seconds
+2025-04-04 05:52:05,638 - INFO - Request: POST http://localhost:7000/api/items/
+2025-04-04 05:52:05,639 - INFO - Headers: {'host': 'localhost:7000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0', 'accept': 'application/json', 'accept-language': 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://localhost:7000/docs', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJjYXJsb3MiLCJleHAiOjE3NDM3NjU2NDR9.xloKSdLMwKnioZFmvCU72i55ElB22iedRBAe_0eyQi8', 'content-type': 'application/json', 'content-length': '115', 'origin': 'http://localhost:7000', 'dnt': '1', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'sec-gpc': '1', 'priority': 'u=0'}
+2025-04-04 05:52:05,639 - INFO - Body: {
+  "name": "Segundo Viernes",
+  "description": "Con files .log separados",
+  "price": 1200,
+  "available": false
+}
+2025-04-04 05:52:05,740 - INFO - Response status: 200
+2025-04-04 05:52:05,740 - INFO - Process time: 0.10162 seconds
+2025-04-04 05:55:13,126 - INFO - Request: GET http://localhost:7000/docs
+2025-04-04 05:55:13,126 - INFO - Headers: {'host': 'localhost:7000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0', 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'accept-language': 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'dnt': '1', 'connection': 'keep-alive', 'upgrade-insecure-requests': '1', 'sec-fetch-dest': 'document', 'sec-fetch-mode': 'navigate', 'sec-fetch-site': 'none', 'sec-fetch-user': '?1', 'sec-gpc': '1', 'priority': 'u=0, i'}
+2025-04-04 05:55:13,127 - INFO - Response status: 200
+2025-04-04 05:55:13,127 - INFO - Process time: 0.000308 seconds
+2025-04-04 05:55:15,108 - INFO - Request: GET http://localhost:7000/openapi.json
+2025-04-04 05:55:15,108 - INFO - Headers: {'host': 'localhost:7000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0', 'accept': 'application/json,*/*', 'accept-language': 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://localhost:7000/docs', 'dnt': '1', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'sec-gpc': '1', 'priority': 'u=4'}
+2025-04-04 05:55:15,126 - INFO - Response status: 200
+2025-04-04 05:55:15,126 - INFO - Process time: 0.017721 seconds
+2025-04-04 05:55:20,886 - INFO - Request: POST http://localhost:7000/token
+2025-04-04 05:55:20,886 - INFO - Headers: {'host': 'localhost:7000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0', 'accept': 'application/json, text/plain, */*', 'accept-language': 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://localhost:7000/docs', 'content-type': 'application/x-www-form-urlencoded', 'x-requested-with': 'XMLHttpRequest', 'authorization': 'Basic Og==', 'content-length': '51', 'origin': 'http://localhost:7000', 'dnt': '1', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'sec-gpc': '1', 'priority': 'u=0'}
+2025-04-04 05:55:20,886 - INFO - Body: grant_type=password&username=carlos&password=secret
+2025-04-04 05:55:21,141 - INFO - Response status: 200
+2025-04-04 05:55:21,141 - INFO - Process time: 0.254373 seconds
+2025-04-04 05:55:34,908 - INFO - Request: POST http://localhost:7000/api/items/
+2025-04-04 05:55:34,908 - INFO - Headers: {'host': 'localhost:7000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0', 'accept': 'application/json', 'accept-language': 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://localhost:7000/docs', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJjYXJsb3MiLCJleHAiOjE3NDM3NjU5MjF9.hvmtfgYP82tp9ekV4oa_1f6TyhxnlqbfpSGeecpsQ6s', 'content-type': 'application/json', 'content-length': '84', 'origin': 'http://localhost:7000', 'dnt': '1', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'sec-gpc': '1', 'priority': 'u=0'}
+2025-04-04 05:55:34,909 - INFO - Body: {
+  "name": "string",
+  "description": "string",
+  "price": 1,
+  "available": true
+}
+2025-04-04 05:55:35,004 - INFO - Response status: 200
+2025-04-04 05:55:35,004 - INFO - Process time: 0.09572 seconds
+2025-04-04 05:55:49,024 - INFO - Request: DELETE http://localhost:7000/api/items/16b3d1df-e6e3-45db-b2e5-144ec66e5078
+2025-04-04 05:55:49,024 - INFO - Headers: {'host': 'localhost:7000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0', 'accept': 'application/json', 'accept-language': 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://localhost:7000/docs', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJjYXJsb3MiLCJleHAiOjE3NDM3NjU5MjF9.hvmtfgYP82tp9ekV4oa_1f6TyhxnlqbfpSGeecpsQ6s', 'origin': 'http://localhost:7000', 'dnt': '1', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'sec-gpc': '1', 'priority': 'u=0'}
+2025-04-04 05:55:49,133 - INFO - Response status: 200
+2025-04-04 05:55:49,133 - INFO - Process time: 0.108309 seconds
+2025-04-04 05:57:38,941 - INFO - Request: GET http://localhost:7000/docs
+2025-04-04 05:57:38,941 - INFO - Headers: {'host': 'localhost:7000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0', 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'accept-language': 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'dnt': '1', 'connection': 'keep-alive', 'upgrade-insecure-requests': '1', 'sec-fetch-dest': 'document', 'sec-fetch-mode': 'navigate', 'sec-fetch-site': 'none', 'sec-fetch-user': '?1', 'sec-gpc': '1', 'priority': 'u=0, i'}
+2025-04-04 05:57:38,941 - INFO - Response status: 200
+2025-04-04 05:57:38,942 - INFO - Process time: 0.000304 seconds
+2025-04-04 05:57:39,320 - INFO - Request: GET http://localhost:7000/openapi.json
+2025-04-04 05:57:39,320 - INFO - Headers: {'host': 'localhost:7000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0', 'accept': 'application/json,*/*', 'accept-language': 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://localhost:7000/docs', 'dnt': '1', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'sec-gpc': '1', 'priority': 'u=4'}
+2025-04-04 05:57:39,320 - INFO - Response status: 200
+2025-04-04 05:57:39,320 - INFO - Process time: 0.000374 seconds
+2025-04-04 05:57:43,224 - INFO - Request: POST http://localhost:7000/token
+2025-04-04 05:57:43,224 - INFO - Headers: {'host': 'localhost:7000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0', 'accept': 'application/json, text/plain, */*', 'accept-language': 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://localhost:7000/docs', 'content-type': 'application/x-www-form-urlencoded', 'x-requested-with': 'XMLHttpRequest', 'authorization': 'Basic Og==', 'content-length': '51', 'origin': 'http://localhost:7000', 'dnt': '1', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'sec-gpc': '1', 'priority': 'u=0'}
+2025-04-04 05:57:43,225 - INFO - Body: grant_type=password&username=carlos&password=secret
+2025-04-04 05:57:43,444 - INFO - Response status: 200
+2025-04-04 05:57:43,444 - INFO - Process time: 0.219592 seconds
+2025-04-04 05:57:58,064 - INFO - Request: DELETE http://localhost:7000/api/items/16b3d1df-e6e3-45db-b2e5-144ec66e5078
+2025-04-04 05:57:58,065 - INFO - Headers: {'host': 'localhost:7000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0', 'accept': 'application/json', 'accept-language': 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://localhost:7000/docs', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJjYXJsb3MiLCJleHAiOjE3NDM3NjYwNjN9.EbnGwkM0k7iWvbbpOxhVEvTwp1DHVXw3QTxvBqQ2e2k', 'origin': 'http://localhost:7000', 'dnt': '1', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'sec-gpc': '1', 'priority': 'u=0'}
+2025-04-04 05:57:58,073 - INFO - Response status: 404
+2025-04-04 05:57:58,073 - INFO - Process time: 0.008318 seconds
+2025-04-04 08:25:24,666 - INFO - Request: GET http://127.0.0.1:8000/docs
+2025-04-04 08:25:24,666 - INFO - Headers: {'host': '127.0.0.1:8000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0', 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'accept-language': 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'dnt': '1', 'connection': 'keep-alive', 'upgrade-insecure-requests': '1', 'sec-fetch-dest': 'document', 'sec-fetch-mode': 'navigate', 'sec-fetch-site': 'none', 'sec-fetch-user': '?1', 'sec-gpc': '1', 'priority': 'u=0, i'}
+2025-04-04 08:25:24,666 - INFO - Body: 
+2025-04-04 08:25:24,667 - INFO - Response status: 200
+2025-04-04 08:25:24,667 - INFO - Process time: 0.000439 seconds
+2025-04-04 08:25:24,958 - INFO - Request: GET http://127.0.0.1:8000/openapi.json
+2025-04-04 08:25:24,958 - INFO - Headers: {'host': '127.0.0.1:8000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0', 'accept': 'application/json,*/*', 'accept-language': 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://127.0.0.1:8000/docs', 'dnt': '1', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'sec-gpc': '1', 'priority': 'u=4'}
+2025-04-04 08:25:24,959 - INFO - Body: 
+2025-04-04 08:25:25,229 - INFO - Response status: 200
+2025-04-04 08:25:25,229 - INFO - Process time: 0.270508 seconds
+2025-04-04 08:25:32,029 - INFO - Request: POST http://127.0.0.1:8000/token
+2025-04-04 08:25:32,029 - INFO - Headers: {'host': '127.0.0.1:8000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0', 'accept': 'application/json, text/plain, */*', 'accept-language': 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://127.0.0.1:8000/docs', 'content-type': 'application/x-www-form-urlencoded', 'x-requested-with': 'XMLHttpRequest', 'authorization': 'Basic Og==', 'content-length': '52', 'origin': 'http://127.0.0.1:8000', 'dnt': '1', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'sec-gpc': '1', 'priority': 'u=0'}
+2025-04-04 08:25:32,029 - INFO - Body: grant_type=password&username=johndoe&password=secret
+2025-04-04 08:25:32,471 - INFO - Response status: 200
+2025-04-04 08:25:32,471 - INFO - Process time: 0.441679 seconds
+2025-04-04 08:25:39,836 - INFO - Request: GET http://127.0.0.1:8000/api/items/
+2025-04-04 08:25:39,836 - INFO - Headers: {'host': '127.0.0.1:8000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0', 'accept': 'application/json', 'accept-language': 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://127.0.0.1:8000/docs', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJqb2huZG9lIiwiZXhwIjoxNzQzNzc0OTMyfQ.16ow6glpolmgaelpOeik5mler4d71UK0Pd46Z_3r8jE', 'dnt': '1', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'sec-gpc': '1', 'priority': 'u=0'}
+2025-04-04 08:25:39,836 - INFO - Body: 
+2025-04-04 08:25:39,841 - INFO - Response status: 200
+2025-04-04 08:25:39,841 - INFO - Process time: 0.004419 seconds
+2025-04-04 08:26:14,874 - INFO - Request: GET http://127.0.0.1:8000/api/items/4c9c2dde-4fd4-4fb5-b042-17e78d44b2aa
+2025-04-04 08:26:14,874 - INFO - Headers: {'host': '127.0.0.1:8000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0', 'accept': 'application/json', 'accept-language': 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://127.0.0.1:8000/docs', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJqb2huZG9lIiwiZXhwIjoxNzQzNzc0OTMyfQ.16ow6glpolmgaelpOeik5mler4d71UK0Pd46Z_3r8jE', 'dnt': '1', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'sec-gpc': '1', 'priority': 'u=0'}
+2025-04-04 08:26:14,875 - INFO - Body: 
+2025-04-04 08:26:14,878 - INFO - Response status: 200
+2025-04-04 08:26:14,878 - INFO - Process time: 0.003608 seconds
+2025-04-04 08:26:54,545 - INFO - Request: PATCH http://127.0.0.1:8000/api/items/4c9c2dde-4fd4-4fb5-b042-17e78d44b2aa
+2025-04-04 08:26:54,545 - INFO - Headers: {'host': '127.0.0.1:8000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0', 'accept': 'application/json', 'accept-language': 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://127.0.0.1:8000/docs', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJqb2huZG9lIiwiZXhwIjoxNzQzNzc0OTMyfQ.16ow6glpolmgaelpOeik5mler4d71UK0Pd46Z_3r8jE', 'content-type': 'application/json', 'content-length': '31', 'origin': 'http://127.0.0.1:8000', 'dnt': '1', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'sec-gpc': '1', 'priority': 'u=0'}
+2025-04-04 08:26:54,641 - INFO - Response status: 200
+2025-04-04 08:26:54,641 - INFO - Process time: 0.095399 seconds
+2025-04-04 08:28:05,189 - INFO - Request: GET http://127.0.0.1:8000/api/users/carlos
+2025-04-04 08:28:05,189 - INFO - Headers: {'host': '127.0.0.1:8000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0', 'accept': 'application/json', 'accept-language': 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://127.0.0.1:8000/docs', 'dnt': '1', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'sec-gpc': '1', 'priority': 'u=0'}
+2025-04-04 08:28:05,189 - INFO - Body: 
+2025-04-04 08:28:05,192 - INFO - Response status: 200
+2025-04-04 08:28:05,192 - INFO - Process time: 0.002161 seconds
+2025-04-04 08:49:32,356 - INFO - Request: GET http://127.0.0.1:8000/docs
+2025-04-04 08:49:32,358 - INFO - Headers: {'host': '127.0.0.1:8000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0', 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'accept-language': 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'dnt': '1', 'connection': 'keep-alive', 'upgrade-insecure-requests': '1', 'sec-fetch-dest': 'document', 'sec-fetch-mode': 'navigate', 'sec-fetch-site': 'none', 'sec-fetch-user': '?1', 'sec-gpc': '1', 'priority': 'u=0, i'}
+2025-04-04 08:49:32,359 - INFO - Body: 
+2025-04-04 08:49:32,365 - INFO - Response status: 200
+2025-04-04 08:49:32,366 - INFO - Process time: 0.005662 seconds
+2025-04-04 08:49:33,131 - INFO - Request: GET http://127.0.0.1:8000/openapi.json
+2025-04-04 08:49:33,131 - INFO - Headers: {'host': '127.0.0.1:8000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0', 'accept': 'application/json,*/*', 'accept-language': 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://127.0.0.1:8000/docs', 'dnt': '1', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'sec-gpc': '1', 'priority': 'u=4'}
+2025-04-04 08:49:33,131 - INFO - Body: 
+2025-04-04 08:49:33,133 - INFO - Response status: 200
+2025-04-04 08:49:33,133 - INFO - Process time: 0.001438 seconds
+2025-04-04 08:50:30,563 - INFO - Request: GET http://127.0.0.1:8000/docs
+2025-04-04 08:50:30,564 - INFO - Headers: {'host': '127.0.0.1:8000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0', 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'accept-language': 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'dnt': '1', 'connection': 'keep-alive', 'upgrade-insecure-requests': '1', 'sec-fetch-dest': 'document', 'sec-fetch-mode': 'navigate', 'sec-fetch-site': 'none', 'sec-fetch-user': '?1', 'sec-gpc': '1', 'priority': 'u=0, i'}
+2025-04-04 08:50:30,564 - INFO - Body: 
+2025-04-04 08:50:30,564 - INFO - Response status: 200
+2025-04-04 08:50:30,564 - INFO - Process time: 0.000493 seconds
+2025-04-04 08:50:30,806 - INFO - Request: GET http://127.0.0.1:8000/openapi.json
+2025-04-04 08:50:30,806 - INFO - Headers: {'host': '127.0.0.1:8000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0', 'accept': 'application/json,*/*', 'accept-language': 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://127.0.0.1:8000/docs', 'dnt': '1', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'sec-gpc': '1', 'priority': 'u=4'}
+2025-04-04 08:50:30,806 - INFO - Body: 
+2025-04-04 08:50:30,807 - INFO - Response status: 200
+2025-04-04 08:50:30,807 - INFO - Process time: 0.000408 seconds
+2025-04-04 08:52:57,012 - INFO - Request: GET http://127.0.0.1:8000/docs
+2025-04-04 08:52:57,012 - INFO - Headers: {'host': '127.0.0.1:8000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0', 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'accept-language': 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'dnt': '1', 'connection': 'keep-alive', 'upgrade-insecure-requests': '1', 'sec-fetch-dest': 'document', 'sec-fetch-mode': 'navigate', 'sec-fetch-site': 'none', 'sec-fetch-user': '?1', 'sec-gpc': '1', 'priority': 'u=0, i'}
+2025-04-04 08:52:57,012 - INFO - Body: 
+2025-04-04 08:52:57,024 - INFO - Response status: 200
+2025-04-04 08:52:57,025 - INFO - Process time: 0.01222 seconds
+2025-04-04 08:52:57,252 - INFO - Request: GET http://127.0.0.1:8000/openapi.json
+2025-04-04 08:52:57,253 - INFO - Headers: {'host': '127.0.0.1:8000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0', 'accept': 'application/json,*/*', 'accept-language': 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://127.0.0.1:8000/docs', 'dnt': '1', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'sec-gpc': '1', 'priority': 'u=4'}
+2025-04-04 08:52:57,253 - INFO - Body: 
+2025-04-04 08:52:57,253 - INFO - Response status: 200
+2025-04-04 08:52:57,253 - INFO - Process time: 0.000524 seconds
+2025-04-04 08:55:11,107 - INFO - Request: GET http://127.0.0.1:8000/docs
+2025-04-04 08:55:11,108 - INFO - Headers: {'host': '127.0.0.1:8000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0', 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'accept-language': 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'dnt': '1', 'connection': 'keep-alive', 'upgrade-insecure-requests': '1', 'sec-fetch-dest': 'document', 'sec-fetch-mode': 'navigate', 'sec-fetch-site': 'none', 'sec-fetch-user': '?1', 'sec-gpc': '1', 'priority': 'u=0, i'}
+2025-04-04 08:55:11,108 - INFO - Body: 
+2025-04-04 08:55:11,108 - INFO - Response status: 200
+2025-04-04 08:55:11,108 - INFO - Process time: 0.00033 seconds
+2025-04-04 08:55:11,341 - INFO - Request: GET http://127.0.0.1:8000/openapi.json
+2025-04-04 08:55:11,341 - INFO - Headers: {'host': '127.0.0.1:8000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0', 'accept': 'application/json,*/*', 'accept-language': 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://127.0.0.1:8000/docs', 'dnt': '1', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'sec-gpc': '1', 'priority': 'u=4'}
+2025-04-04 08:55:11,341 - INFO - Body: 
+2025-04-04 08:55:11,342 - INFO - Response status: 200
+2025-04-04 08:55:11,342 - INFO - Process time: 0.000545 seconds
+2025-04-04 08:57:11,496 - INFO - Request: GET http://127.0.0.1:7000/docs
+2025-04-04 08:57:11,497 - INFO - Headers: {'host': '127.0.0.1:7000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0', 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'accept-language': 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'dnt': '1', 'connection': 'keep-alive', 'upgrade-insecure-requests': '1', 'sec-fetch-dest': 'document', 'sec-fetch-mode': 'navigate', 'sec-fetch-site': 'none', 'sec-fetch-user': '?1', 'sec-gpc': '1', 'priority': 'u=0, i'}
+2025-04-04 08:57:11,497 - INFO - Body: 
+2025-04-04 08:57:11,497 - INFO - Response status: 200
+2025-04-04 08:57:11,497 - INFO - Process time: 0.000396 seconds
+2025-04-04 08:57:11,854 - INFO - Request: GET http://127.0.0.1:7000/openapi.json
+2025-04-04 08:57:11,854 - INFO - Headers: {'host': '127.0.0.1:7000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0', 'accept': 'application/json,*/*', 'accept-language': 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://127.0.0.1:7000/docs', 'dnt': '1', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'sec-gpc': '1', 'priority': 'u=4'}
+2025-04-04 08:57:11,854 - INFO - Body: 
+2025-04-04 08:57:11,896 - INFO - Response status: 200
+2025-04-04 08:57:11,896 - INFO - Process time: 0.041939 seconds
+2025-04-04 08:57:21,839 - INFO - Request: POST http://127.0.0.1:7000/token
+2025-04-04 08:57:21,839 - INFO - Headers: {'host': '127.0.0.1:7000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0', 'accept': 'application/json, text/plain, */*', 'accept-language': 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://127.0.0.1:7000/docs', 'content-type': 'application/x-www-form-urlencoded', 'x-requested-with': 'XMLHttpRequest', 'authorization': 'Basic Og==', 'content-length': '52', 'origin': 'http://127.0.0.1:7000', 'dnt': '1', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'sec-gpc': '1', 'priority': 'u=0'}
+2025-04-04 08:57:21,839 - INFO - Body: grant_type=password&username=johndoe&password=secret
+2025-04-04 08:57:22,144 - INFO - Response status: 200
+2025-04-04 08:57:22,145 - INFO - Process time: 0.305597 seconds
+2025-04-04 08:57:35,263 - INFO - Request: POST http://127.0.0.1:7000/predict-sales/
+2025-04-04 08:57:35,263 - INFO - Headers: {'host': '127.0.0.1:7000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0', 'accept': 'application/json', 'accept-language': 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://127.0.0.1:7000/docs', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJqb2huZG9lIiwiZXhwIjoxNzQzNzc2ODQyfQ.eho3faCQFNcS5GyhpQcx044Ah4scT7JE_x3QtyqdXEE', 'content-type': 'application/json', 'content-length': '8', 'origin': 'http://127.0.0.1:7000', 'dnt': '1', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'sec-gpc': '1', 'priority': 'u=0'}
+2025-04-04 08:57:35,263 - INFO - Body: [
+  70
+]
+2025-04-04 08:57:35,266 - INFO - Response status: 400
+2025-04-04 08:57:35,266 - INFO - Process time: 0.0028 seconds
+2025-04-04 08:59:43,882 - INFO - Request: GET http://127.0.0.1:7000/docs
+2025-04-04 08:59:43,882 - INFO - Headers: {'host': '127.0.0.1:7000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0', 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'accept-language': 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'dnt': '1', 'connection': 'keep-alive', 'upgrade-insecure-requests': '1', 'sec-fetch-dest': 'document', 'sec-fetch-mode': 'navigate', 'sec-fetch-site': 'none', 'sec-fetch-user': '?1', 'sec-gpc': '1', 'priority': 'u=0, i'}
+2025-04-04 08:59:43,883 - INFO - Body: 
+2025-04-04 08:59:43,883 - INFO - Response status: 200
+2025-04-04 08:59:43,883 - INFO - Process time: 0.000373 seconds
+2025-04-04 08:59:46,547 - INFO - Request: GET http://127.0.0.1:7000/openapi.json
+2025-04-04 08:59:46,547 - INFO - Headers: {'host': '127.0.0.1:7000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0', 'accept': 'application/json,*/*', 'accept-language': 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://127.0.0.1:7000/docs', 'dnt': '1', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'sec-gpc': '1', 'priority': 'u=4'}
+2025-04-04 08:59:46,547 - INFO - Body: 
+2025-04-04 08:59:46,566 - INFO - Response status: 200
+2025-04-04 08:59:46,566 - INFO - Process time: 0.018165 seconds
+2025-04-04 08:59:52,743 - INFO - Request: POST http://127.0.0.1:7000/token
+2025-04-04 08:59:52,744 - INFO - Headers: {'host': '127.0.0.1:7000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0', 'accept': 'application/json, text/plain, */*', 'accept-language': 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://127.0.0.1:7000/docs', 'content-type': 'application/x-www-form-urlencoded', 'x-requested-with': 'XMLHttpRequest', 'authorization': 'Basic Og==', 'content-length': '52', 'origin': 'http://127.0.0.1:7000', 'dnt': '1', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'sec-gpc': '1', 'priority': 'u=0'}
+2025-04-04 08:59:52,744 - INFO - Body: grant_type=password&username=johndoe&password=secret
+2025-04-04 08:59:53,026 - INFO - Response status: 200
+2025-04-04 08:59:53,026 - INFO - Process time: 0.282281 seconds
+2025-04-04 09:00:01,301 - INFO - Request: POST http://127.0.0.1:7000/predict-sales/
+2025-04-04 09:00:01,302 - INFO - Headers: {'host': '127.0.0.1:7000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0', 'accept': 'application/json', 'accept-language': 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://127.0.0.1:7000/docs', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJqb2huZG9lIiwiZXhwIjoxNzQzNzc2OTkzfQ.2QTtFY0UTGxzTuZXRXvPftz8R8GrRaXEt6-tWrMudkE', 'content-type': 'application/json', 'content-length': '8', 'origin': 'http://127.0.0.1:7000', 'dnt': '1', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'sec-gpc': '1', 'priority': 'u=0'}
+2025-04-04 09:00:01,302 - INFO - Body: [
+  50
+]
+2025-04-04 09:00:01,495 - INFO - Response status: 200
+2025-04-04 09:00:01,495 - INFO - Process time: 0.193482 seconds
+2025-04-04 09:13:18,937 - INFO - Request: GET http://127.0.0.1:7000/docs
+2025-04-04 09:13:18,937 - INFO - Headers: {'host': '127.0.0.1:7000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0', 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'accept-language': 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'dnt': '1', 'connection': 'keep-alive', 'upgrade-insecure-requests': '1', 'sec-fetch-dest': 'document', 'sec-fetch-mode': 'navigate', 'sec-fetch-site': 'none', 'sec-fetch-user': '?1', 'sec-gpc': '1', 'priority': 'u=0, i'}
+2025-04-04 09:13:18,937 - INFO - Body: 
+2025-04-04 09:13:18,938 - INFO - Response status: 200
+2025-04-04 09:13:18,938 - INFO - Process time: 0.00035 seconds
+2025-04-04 09:13:19,228 - INFO - Request: GET http://127.0.0.1:7000/openapi.json
+2025-04-04 09:13:19,229 - INFO - Headers: {'host': '127.0.0.1:7000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0', 'accept': 'application/json,*/*', 'accept-language': 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://127.0.0.1:7000/docs', 'dnt': '1', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'sec-gpc': '1', 'priority': 'u=4'}
+2025-04-04 09:13:19,229 - INFO - Body: 
+2025-04-04 09:13:19,240 - INFO - Response status: 200
+2025-04-04 09:13:19,240 - INFO - Process time: 0.011459 seconds
+2025-04-04 09:13:24,685 - INFO - Request: POST http://127.0.0.1:7000/token
+2025-04-04 09:13:24,686 - INFO - Headers: {'host': '127.0.0.1:7000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0', 'accept': 'application/json, text/plain, */*', 'accept-language': 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://127.0.0.1:7000/docs', 'content-type': 'application/x-www-form-urlencoded', 'x-requested-with': 'XMLHttpRequest', 'authorization': 'Basic Og==', 'content-length': '52', 'origin': 'http://127.0.0.1:7000', 'dnt': '1', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'sec-gpc': '1', 'priority': 'u=0'}
+2025-04-04 09:13:24,686 - INFO - Body: grant_type=password&username=johndoe&password=secret
+2025-04-04 09:13:24,950 - INFO - Response status: 200
+2025-04-04 09:13:24,950 - INFO - Process time: 0.264025 seconds
+2025-04-04 09:13:31,863 - INFO - Request: POST http://127.0.0.1:7000/predict-sales/
+2025-04-04 09:13:31,863 - INFO - Headers: {'host': '127.0.0.1:7000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0', 'accept': 'application/json', 'accept-language': 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://127.0.0.1:7000/docs', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJqb2huZG9lIiwiZXhwIjoxNzQzNzc3ODA0fQ.Fyx6HT3zMosCMxL7TmyVet8Y8yT_S1lpYqRVXRAsZbI', 'content-type': 'application/json', 'content-length': '8', 'origin': 'http://127.0.0.1:7000', 'dnt': '1', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'sec-gpc': '1', 'priority': 'u=0'}
+2025-04-04 09:13:31,863 - INFO - Body: [
+  50
+]
+2025-04-04 09:13:31,868 - INFO - Response status: 200
+2025-04-04 09:13:31,868 - INFO - Process time: 0.004871 seconds
+2025-04-04 09:18:35,766 - INFO - Request: GET http://127.0.0.1:7000/docs
+2025-04-04 09:18:35,766 - INFO - Headers: {'host': '127.0.0.1:7000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0', 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'accept-language': 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'dnt': '1', 'connection': 'keep-alive', 'upgrade-insecure-requests': '1', 'sec-fetch-dest': 'document', 'sec-fetch-mode': 'navigate', 'sec-fetch-site': 'none', 'sec-fetch-user': '?1', 'sec-gpc': '1', 'priority': 'u=0, i'}
+2025-04-04 09:18:35,767 - INFO - Body: 
+2025-04-04 09:18:35,767 - INFO - Response status: 200
+2025-04-04 09:18:35,767 - INFO - Process time: 0.000445 seconds
+2025-04-04 09:18:36,015 - INFO - Request: GET http://127.0.0.1:7000/openapi.json
+2025-04-04 09:18:36,015 - INFO - Headers: {'host': '127.0.0.1:7000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0', 'accept': 'application/json,*/*', 'accept-language': 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://127.0.0.1:7000/docs', 'dnt': '1', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'sec-gpc': '1', 'priority': 'u=4'}
+2025-04-04 09:18:36,015 - INFO - Body: 
+2025-04-04 09:18:36,109 - INFO - Response status: 200
+2025-04-04 09:18:36,110 - INFO - Process time: 0.094202 seconds
+2025-04-04 09:18:40,935 - INFO - Request: POST http://127.0.0.1:7000/token
+2025-04-04 09:18:40,935 - INFO - Headers: {'host': '127.0.0.1:7000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0', 'accept': 'application/json, text/plain, */*', 'accept-language': 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://127.0.0.1:7000/docs', 'content-type': 'application/x-www-form-urlencoded', 'x-requested-with': 'XMLHttpRequest', 'authorization': 'Basic Og==', 'content-length': '52', 'origin': 'http://127.0.0.1:7000', 'dnt': '1', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'sec-gpc': '1', 'priority': 'u=0'}
+2025-04-04 09:18:40,935 - INFO - Body: grant_type=password&username=johndoe&password=secret
+2025-04-04 09:18:41,199 - INFO - Response status: 200
+2025-04-04 09:18:41,199 - INFO - Process time: 0.263856 seconds
+2025-04-04 09:18:47,824 - INFO - Request: GET http://127.0.0.1:7000/api/items/
+2025-04-04 09:18:47,824 - INFO - Headers: {'host': '127.0.0.1:7000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0', 'accept': 'application/json', 'accept-language': 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://127.0.0.1:7000/docs', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJqb2huZG9lIiwiZXhwIjoxNzQzNzc4MTIxfQ.CD1Y7Ev7M8MwAuviNYdkTAue28yag5US3DXx64JjyPc', 'dnt': '1', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'sec-gpc': '1', 'priority': 'u=0'}
+2025-04-04 09:18:47,824 - INFO - Body: 
+2025-04-04 09:18:47,829 - INFO - Response status: 200
+2025-04-04 09:18:47,829 - INFO - Process time: 0.004631 seconds
+2025-04-04 09:19:07,885 - INFO - Request: GET http://127.0.0.1:7000/api/users/carlos
+2025-04-04 09:19:07,885 - INFO - Headers: {'host': '127.0.0.1:7000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0', 'accept': 'application/json', 'accept-language': 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://127.0.0.1:7000/docs', 'dnt': '1', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'sec-gpc': '1', 'priority': 'u=0'}
+2025-04-04 09:19:07,885 - INFO - Body: 
+2025-04-04 09:19:07,887 - INFO - Response status: 200
+2025-04-04 09:19:07,887 - INFO - Process time: 0.001893 seconds
+2025-04-04 09:19:20,469 - INFO - Request: POST http://127.0.0.1:7000/predict-sales/
+2025-04-04 09:19:20,469 - INFO - Headers: {'host': '127.0.0.1:7000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0', 'accept': 'application/json', 'accept-language': 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://127.0.0.1:7000/docs', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJqb2huZG9lIiwiZXhwIjoxNzQzNzc4MTIxfQ.CD1Y7Ev7M8MwAuviNYdkTAue28yag5US3DXx64JjyPc', 'content-type': 'application/json', 'content-length': '8', 'origin': 'http://127.0.0.1:7000', 'dnt': '1', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'sec-gpc': '1', 'priority': 'u=0'}
+2025-04-04 09:19:20,469 - INFO - Body: [
+  50
+]
+2025-04-04 09:19:20,473 - INFO - Response status: 200
+2025-04-04 09:19:20,473 - INFO - Process time: 0.003805 seconds
+2025-04-04 09:33:49,500 - INFO - Request: GET http://127.0.0.1:7000/docs
+2025-04-04 09:33:49,500 - INFO - Headers: {'host': '127.0.0.1:7000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0', 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'accept-language': 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'dnt': '1', 'connection': 'keep-alive', 'upgrade-insecure-requests': '1', 'sec-fetch-dest': 'document', 'sec-fetch-mode': 'navigate', 'sec-fetch-site': 'none', 'sec-fetch-user': '?1', 'sec-gpc': '1', 'priority': 'u=0, i'}
+2025-04-04 09:33:49,500 - INFO - Body: 
+2025-04-04 09:33:49,501 - INFO - Response status: 200
+2025-04-04 09:33:49,501 - INFO - Process time: 0.000363 seconds
+2025-04-04 09:33:49,772 - INFO - Request: GET http://127.0.0.1:7000/openapi.json
+2025-04-04 09:33:49,772 - INFO - Headers: {'host': '127.0.0.1:7000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0', 'accept': 'application/json,*/*', 'accept-language': 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://127.0.0.1:7000/docs', 'dnt': '1', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'sec-gpc': '1', 'priority': 'u=4'}
+2025-04-04 09:33:49,772 - INFO - Body: 
+2025-04-04 09:33:49,772 - INFO - Response status: 200
+2025-04-04 09:33:49,773 - INFO - Process time: 0.000455 seconds
+2025-04-04 09:33:55,361 - INFO - Request: POST http://127.0.0.1:7000/token
+2025-04-04 09:33:55,361 - INFO - Headers: {'host': '127.0.0.1:7000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0', 'accept': 'application/json, text/plain, */*', 'accept-language': 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://127.0.0.1:7000/docs', 'content-type': 'application/x-www-form-urlencoded', 'x-requested-with': 'XMLHttpRequest', 'authorization': 'Basic Og==', 'content-length': '52', 'origin': 'http://127.0.0.1:7000', 'dnt': '1', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'sec-gpc': '1', 'priority': 'u=0'}
+2025-04-04 09:33:55,361 - INFO - Body: grant_type=password&username=johndoe&password=secret
+2025-04-04 09:33:55,586 - INFO - Response status: 200
+2025-04-04 09:33:55,587 - INFO - Process time: 0.225191 seconds
+2025-04-04 09:34:01,059 - INFO - Request: GET http://127.0.0.1:7000/api/items/
+2025-04-04 09:34:01,059 - INFO - Headers: {'host': '127.0.0.1:7000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0', 'accept': 'application/json', 'accept-language': 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://127.0.0.1:7000/docs', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJqb2huZG9lIiwiZXhwIjoxNzQzNzc5MDM1fQ.yrYrmCYwZEA7ut826S6xe7NWH6WWhOQr76XB1JOdI9o', 'dnt': '1', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'sec-gpc': '1', 'priority': 'u=0'}
+2025-04-04 09:34:01,059 - INFO - Body: 
+2025-04-04 09:34:01,062 - INFO - Response status: 200
+2025-04-04 09:34:01,062 - INFO - Process time: 0.002747 seconds
+2025-04-04 09:34:22,453 - INFO - Request: POST http://127.0.0.1:7000/predict-sales/
+2025-04-04 09:34:22,454 - INFO - Headers: {'host': '127.0.0.1:7000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0', 'accept': 'application/json', 'accept-language': 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://127.0.0.1:7000/docs', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJqb2huZG9lIiwiZXhwIjoxNzQzNzc5MDM1fQ.yrYrmCYwZEA7ut826S6xe7NWH6WWhOQr76XB1JOdI9o', 'content-type': 'application/json', 'content-length': '8', 'origin': 'http://127.0.0.1:7000', 'dnt': '1', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'sec-gpc': '1', 'priority': 'u=0'}
+2025-04-04 09:34:22,454 - INFO - Body: [
+  50
+]
+2025-04-04 09:34:22,464 - INFO - Response status: 200
+2025-04-04 09:34:22,464 - INFO - Process time: 0.010422 seconds
+2025-04-04 09:34:42,979 - INFO - Request: GET http://127.0.0.1:7000/api/items/4c9c2dde-4fd4-4fb5-b042-17e78d44b2aa
+2025-04-04 09:34:42,979 - INFO - Headers: {'host': '127.0.0.1:7000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0', 'accept': 'application/json', 'accept-language': 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://127.0.0.1:7000/docs', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJqb2huZG9lIiwiZXhwIjoxNzQzNzc5MDM1fQ.yrYrmCYwZEA7ut826S6xe7NWH6WWhOQr76XB1JOdI9o', 'dnt': '1', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'sec-gpc': '1', 'priority': 'u=0'}
+2025-04-04 09:34:42,979 - INFO - Body: 
+2025-04-04 09:34:42,982 - INFO - Response status: 200
+2025-04-04 09:34:42,982 - INFO - Process time: 0.002742 seconds
+2025-04-04 09:34:55,827 - INFO - Request: GET http://127.0.0.1:7000/api/users/4c9c2dde-4fd4-4fb5-b042-17e78d44b2aa
+2025-04-04 09:34:55,827 - INFO - Headers: {'host': '127.0.0.1:7000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0', 'accept': 'application/json', 'accept-language': 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://127.0.0.1:7000/docs', 'dnt': '1', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'sec-gpc': '1', 'priority': 'u=0'}
+2025-04-04 09:34:55,827 - INFO - Body: 
+2025-04-04 09:34:55,829 - INFO - Response status: 404
+2025-04-04 09:34:55,829 - INFO - Process time: 0.001485 seconds
+2025-04-04 09:35:04,586 - INFO - Request: GET http://127.0.0.1:7000/api/users/carlos
+2025-04-04 09:35:04,586 - INFO - Headers: {'host': '127.0.0.1:7000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0', 'accept': 'application/json', 'accept-language': 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://127.0.0.1:7000/docs', 'dnt': '1', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'sec-gpc': '1', 'priority': 'u=0'}
+2025-04-04 09:35:04,586 - INFO - Body: 
+2025-04-04 09:35:04,588 - INFO - Response status: 200
+2025-04-04 09:35:04,588 - INFO - Process time: 0.001587 seconds
+2025-04-04 10:25:21,443 - INFO - Request: GET http://127.0.0.1:7000/docs
+2025-04-04 10:25:21,443 - INFO - Headers: {'host': '127.0.0.1:7000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0', 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'accept-language': 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'dnt': '1', 'connection': 'keep-alive', 'upgrade-insecure-requests': '1', 'sec-fetch-dest': 'document', 'sec-fetch-mode': 'navigate', 'sec-fetch-site': 'none', 'sec-fetch-user': '?1', 'sec-gpc': '1', 'priority': 'u=0, i'}
+2025-04-04 10:25:21,443 - INFO - Body: 
+2025-04-04 10:25:21,444 - INFO - Response status: 200
+2025-04-04 10:25:21,444 - INFO - Process time: 0.000399 seconds
+2025-04-04 10:25:21,752 - INFO - Request: GET http://127.0.0.1:7000/openapi.json
+2025-04-04 10:25:21,752 - INFO - Headers: {'host': '127.0.0.1:7000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0', 'accept': 'application/json,*/*', 'accept-language': 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://127.0.0.1:7000/docs', 'dnt': '1', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'sec-gpc': '1', 'priority': 'u=4'}
+2025-04-04 10:25:21,752 - INFO - Body: 
+2025-04-04 10:25:21,796 - INFO - Response status: 200
+2025-04-04 10:25:21,796 - INFO - Process time: 0.043301 seconds
+2025-04-04 10:25:26,861 - INFO - Request: POST http://127.0.0.1:7000/token
+2025-04-04 10:25:26,861 - INFO - Headers: {'host': '127.0.0.1:7000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0', 'accept': 'application/json, text/plain, */*', 'accept-language': 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://127.0.0.1:7000/docs', 'content-type': 'application/x-www-form-urlencoded', 'x-requested-with': 'XMLHttpRequest', 'authorization': 'Basic Og==', 'content-length': '52', 'origin': 'http://127.0.0.1:7000', 'dnt': '1', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'sec-gpc': '1', 'priority': 'u=0'}
+2025-04-04 10:25:26,861 - INFO - Body: grant_type=password&username=johndoe&password=secret
+2025-04-04 10:25:27,151 - INFO - Response status: 200
+2025-04-04 10:25:27,151 - INFO - Process time: 0.289831 seconds
+2025-04-04 10:25:33,407 - INFO - Request: GET http://127.0.0.1:7000/api/items/items/
+2025-04-04 10:25:33,407 - INFO - Headers: {'host': '127.0.0.1:7000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0', 'accept': 'application/json', 'accept-language': 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://127.0.0.1:7000/docs', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJqb2huZG9lIiwiZXhwIjoxNzQzNzgyMTI3fQ.CjT8Zllyg8_-o6ha_yiO2fsSGxE76a2nBprnEjIlydo', 'dnt': '1', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'sec-gpc': '1', 'priority': 'u=0'}
+2025-04-04 10:25:33,407 - INFO - Body: 
+2025-04-04 10:25:33,412 - INFO - Response status: 200
+2025-04-04 10:25:33,412 - INFO - Process time: 0.00459 seconds
+2025-04-04 10:26:23,702 - INFO - Request: GET http://127.0.0.1:7000/items/4c9c2dde-4fd4-4fb5-b042-17e78d44b2aa
+2025-04-04 10:26:23,702 - INFO - Headers: {'host': '127.0.0.1:7000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0', 'accept': 'application/json', 'accept-language': 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://127.0.0.1:7000/docs', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJqb2huZG9lIiwiZXhwIjoxNzQzNzgyMTI3fQ.CjT8Zllyg8_-o6ha_yiO2fsSGxE76a2nBprnEjIlydo', 'dnt': '1', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'sec-gpc': '1', 'priority': 'u=0'}
+2025-04-04 10:26:23,702 - INFO - Body: 
+2025-04-04 10:26:23,705 - INFO - Response status: 200
+2025-04-04 10:26:23,705 - INFO - Process time: 0.003298 seconds
+2025-04-04 10:29:53,894 - INFO - Request: GET http://127.0.0.1:7000/docs
+2025-04-04 10:29:53,894 - INFO - Headers: {'host': '127.0.0.1:7000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0', 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'accept-language': 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'dnt': '1', 'connection': 'keep-alive', 'upgrade-insecure-requests': '1', 'sec-fetch-dest': 'document', 'sec-fetch-mode': 'navigate', 'sec-fetch-site': 'none', 'sec-fetch-user': '?1', 'sec-gpc': '1', 'priority': 'u=0, i'}
+2025-04-04 10:29:53,894 - INFO - Body: 
+2025-04-04 10:29:53,894 - INFO - Response status: 200
+2025-04-04 10:29:53,894 - INFO - Process time: 0.00025 seconds
+2025-04-04 10:30:54,605 - INFO - Request: GET http://127.0.0.1:7000/openapi.json
+2025-04-04 10:30:54,605 - INFO - Headers: {'host': '127.0.0.1:7000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0', 'accept': 'application/json,*/*', 'accept-language': 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://127.0.0.1:7000/docs', 'dnt': '1', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'sec-gpc': '1', 'priority': 'u=4'}
+2025-04-04 10:30:54,605 - INFO - Body: 
+2025-04-04 10:30:54,676 - INFO - Response status: 200
+2025-04-04 10:30:54,676 - INFO - Process time: 0.070839 seconds
+2025-04-04 10:30:58,321 - INFO - Request: GET http://127.0.0.1:7000/docs
+2025-04-04 10:30:58,321 - INFO - Headers: {'host': '127.0.0.1:7000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0', 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'accept-language': 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'dnt': '1', 'connection': 'keep-alive', 'upgrade-insecure-requests': '1', 'sec-fetch-dest': 'document', 'sec-fetch-mode': 'navigate', 'sec-fetch-site': 'none', 'sec-fetch-user': '?1', 'sec-gpc': '1', 'priority': 'u=0, i'}
+2025-04-04 10:30:58,321 - INFO - Body: 
+2025-04-04 10:30:58,322 - INFO - Response status: 200
+2025-04-04 10:30:58,322 - INFO - Process time: 0.00029 seconds
+2025-04-04 10:30:58,633 - INFO - Request: GET http://127.0.0.1:7000/openapi.json
+2025-04-04 10:30:58,634 - INFO - Headers: {'host': '127.0.0.1:7000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0', 'accept': 'application/json,*/*', 'accept-language': 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://127.0.0.1:7000/docs', 'dnt': '1', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'sec-gpc': '1', 'priority': 'u=4'}
+2025-04-04 10:30:58,634 - INFO - Body: 
+2025-04-04 10:30:58,634 - INFO - Response status: 200
+2025-04-04 10:30:58,634 - INFO - Process time: 0.000596 seconds
+2025-04-04 10:31:02,785 - INFO - Request: POST http://127.0.0.1:7000/token
+2025-04-04 10:31:02,785 - INFO - Headers: {'host': '127.0.0.1:7000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0', 'accept': 'application/json, text/plain, */*', 'accept-language': 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://127.0.0.1:7000/docs', 'content-type': 'application/x-www-form-urlencoded', 'x-requested-with': 'XMLHttpRequest', 'authorization': 'Basic Og==', 'content-length': '52', 'origin': 'http://127.0.0.1:7000', 'dnt': '1', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'sec-gpc': '1', 'priority': 'u=0'}
+2025-04-04 10:31:02,785 - INFO - Body: grant_type=password&username=johndoe&password=secret
+2025-04-04 10:31:03,036 - INFO - Response status: 200
+2025-04-04 10:31:03,036 - INFO - Process time: 0.250609 seconds
+2025-04-04 10:33:31,738 - INFO - Request: GET http://127.0.0.1:7000/docs
+2025-04-04 10:33:31,738 - INFO - Headers: {'host': '127.0.0.1:7000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0', 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'accept-language': 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'dnt': '1', 'connection': 'keep-alive', 'upgrade-insecure-requests': '1', 'sec-fetch-dest': 'document', 'sec-fetch-mode': 'navigate', 'sec-fetch-site': 'none', 'sec-fetch-user': '?1', 'sec-gpc': '1', 'priority': 'u=0, i'}
+2025-04-04 10:33:31,738 - INFO - Body: 
+2025-04-04 10:33:31,738 - INFO - Response status: 200
+2025-04-04 10:33:31,738 - INFO - Process time: 0.000312 seconds
+2025-04-04 10:33:34,447 - INFO - Request: GET http://127.0.0.1:7000/openapi.json
+2025-04-04 10:33:34,447 - INFO - Headers: {'host': '127.0.0.1:7000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0', 'accept': 'application/json,*/*', 'accept-language': 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://127.0.0.1:7000/docs', 'dnt': '1', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'sec-gpc': '1', 'priority': 'u=4'}
+2025-04-04 10:33:34,447 - INFO - Body: 
+2025-04-04 10:33:34,515 - INFO - Response status: 200
+2025-04-04 10:33:34,515 - INFO - Process time: 0.067203 seconds
+2025-04-04 10:40:30,259 - INFO - Request: GET http://127.0.0.1:7000/docs
+2025-04-04 10:40:30,259 - INFO - Headers: {'host': '127.0.0.1:7000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0', 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'accept-language': 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'dnt': '1', 'connection': 'keep-alive', 'upgrade-insecure-requests': '1', 'sec-fetch-dest': 'document', 'sec-fetch-mode': 'navigate', 'sec-fetch-site': 'none', 'sec-fetch-user': '?1', 'sec-gpc': '1', 'priority': 'u=0, i'}
+2025-04-04 10:40:30,259 - INFO - Body: 
+2025-04-04 10:40:30,260 - INFO - Response status: 200
+2025-04-04 10:40:30,260 - INFO - Process time: 0.000313 seconds
+2025-04-04 10:40:32,810 - INFO - Request: GET http://127.0.0.1:7000/openapi.json
+2025-04-04 10:40:32,810 - INFO - Headers: {'host': '127.0.0.1:7000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0', 'accept': 'application/json,*/*', 'accept-language': 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://127.0.0.1:7000/docs', 'dnt': '1', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'sec-gpc': '1', 'priority': 'u=4'}
+2025-04-04 10:40:32,810 - INFO - Body: 
+2025-04-04 10:40:32,821 - INFO - Response status: 200
+2025-04-04 10:40:32,822 - INFO - Process time: 0.011183 seconds
+2025-04-04 10:41:45,004 - INFO - Request: GET http://127.0.0.1:7000/docs
+2025-04-04 10:41:45,004 - INFO - Headers: {'host': '127.0.0.1:7000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0', 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'accept-language': 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'dnt': '1', 'connection': 'keep-alive', 'upgrade-insecure-requests': '1', 'sec-fetch-dest': 'document', 'sec-fetch-mode': 'navigate', 'sec-fetch-site': 'none', 'sec-fetch-user': '?1', 'sec-gpc': '1', 'priority': 'u=0, i'}
+2025-04-04 10:41:45,004 - INFO - Body: 
+2025-04-04 10:41:45,004 - INFO - Response status: 200
+2025-04-04 10:41:45,004 - INFO - Process time: 0.000283 seconds
+2025-04-04 10:41:47,465 - INFO - Request: GET http://127.0.0.1:7000/openapi.json
+2025-04-04 10:41:47,466 - INFO - Headers: {'host': '127.0.0.1:7000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0', 'accept': 'application/json,*/*', 'accept-language': 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://127.0.0.1:7000/docs', 'dnt': '1', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'sec-gpc': '1', 'priority': 'u=4'}
+2025-04-04 10:41:47,466 - INFO - Body: 
+2025-04-04 10:41:47,479 - INFO - Response status: 200
+2025-04-04 10:41:47,479 - INFO - Process time: 0.012945 seconds
+2025-04-04 10:42:39,329 - INFO - Request: GET http://127.0.0.1:7000/docs
+2025-04-04 10:42:39,329 - INFO - Headers: {'host': '127.0.0.1:7000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0', 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'accept-language': 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'dnt': '1', 'connection': 'keep-alive', 'upgrade-insecure-requests': '1', 'sec-fetch-dest': 'document', 'sec-fetch-mode': 'navigate', 'sec-fetch-site': 'none', 'sec-fetch-user': '?1', 'sec-gpc': '1', 'priority': 'u=0, i'}
+2025-04-04 10:42:39,329 - INFO - Body: 
+2025-04-04 10:42:39,330 - INFO - Response status: 200
+2025-04-04 10:42:39,330 - INFO - Process time: 0.000434 seconds
+2025-04-04 10:42:53,361 - INFO - Request: GET http://127.0.0.1:7000/openapi.json
+2025-04-04 10:42:53,361 - INFO - Headers: {'host': '127.0.0.1:7000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0', 'accept': 'application/json,*/*', 'accept-language': 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://127.0.0.1:7000/docs', 'dnt': '1', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'sec-gpc': '1', 'priority': 'u=4'}
+2025-04-04 10:42:53,361 - INFO - Body: 
+2025-04-04 10:42:53,392 - INFO - Response status: 200
+2025-04-04 10:42:53,392 - INFO - Process time: 0.030547 seconds
+2025-04-04 10:42:53,581 - INFO - Request: GET http://127.0.0.1:7000/docs
+2025-04-04 10:42:53,581 - INFO - Headers: {'host': '127.0.0.1:7000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0', 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'accept-language': 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'dnt': '1', 'connection': 'keep-alive', 'upgrade-insecure-requests': '1', 'sec-fetch-dest': 'document', 'sec-fetch-mode': 'navigate', 'sec-fetch-site': 'none', 'sec-fetch-user': '?1', 'sec-gpc': '1', 'priority': 'u=0, i'}
+2025-04-04 10:42:53,581 - INFO - Body: 
+2025-04-04 10:42:53,582 - INFO - Response status: 200
+2025-04-04 10:42:53,582 - INFO - Process time: 0.000528 seconds
+2025-04-04 10:42:53,863 - INFO - Request: GET http://127.0.0.1:7000/openapi.json
+2025-04-04 10:42:53,864 - INFO - Headers: {'host': '127.0.0.1:7000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0', 'accept': 'application/json,*/*', 'accept-language': 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://127.0.0.1:7000/docs', 'dnt': '1', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'sec-gpc': '1', 'priority': 'u=4'}
+2025-04-04 10:42:53,864 - INFO - Body: 
+2025-04-04 10:42:53,864 - INFO - Response status: 200
+2025-04-04 10:42:53,864 - INFO - Process time: 0.000675 seconds
+2025-04-04 10:44:24,007 - INFO - Request: GET http://127.0.0.1:7000/docs
+2025-04-04 10:44:24,007 - INFO - Headers: {'host': '127.0.0.1:7000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0', 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'accept-language': 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'dnt': '1', 'connection': 'keep-alive', 'upgrade-insecure-requests': '1', 'sec-fetch-dest': 'document', 'sec-fetch-mode': 'navigate', 'sec-fetch-site': 'none', 'sec-fetch-user': '?1', 'sec-gpc': '1', 'priority': 'u=0, i'}
+2025-04-04 10:44:24,007 - INFO - Body: 
+2025-04-04 10:44:24,008 - INFO - Response status: 200
+2025-04-04 10:44:24,008 - INFO - Process time: 0.00026 seconds
+2025-04-04 10:44:26,481 - INFO - Request: GET http://127.0.0.1:7000/openapi.json
+2025-04-04 10:44:26,481 - INFO - Headers: {'host': '127.0.0.1:7000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0', 'accept': 'application/json,*/*', 'accept-language': 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://127.0.0.1:7000/docs', 'dnt': '1', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'sec-gpc': '1', 'priority': 'u=4'}
+2025-04-04 10:44:26,481 - INFO - Body: 
+2025-04-04 10:44:26,493 - INFO - Response status: 200
+2025-04-04 10:44:26,493 - INFO - Process time: 0.01103 seconds
+2025-04-04 10:44:44,611 - INFO - Request: POST http://127.0.0.1:7000/token
+2025-04-04 10:44:44,611 - INFO - Headers: {'host': '127.0.0.1:7000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0', 'accept': 'application/json, text/plain, */*', 'accept-language': 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://127.0.0.1:7000/docs', 'content-type': 'application/x-www-form-urlencoded', 'x-requested-with': 'XMLHttpRequest', 'authorization': 'Basic Og==', 'content-length': '52', 'origin': 'http://127.0.0.1:7000', 'dnt': '1', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'sec-gpc': '1', 'priority': 'u=0'}
+2025-04-04 10:44:44,611 - INFO - Body: grant_type=password&username=johndoe&password=secret
+2025-04-04 10:44:44,922 - INFO - Response status: 200
+2025-04-04 10:44:44,922 - INFO - Process time: 0.310747 seconds
+2025-04-04 10:44:48,820 - INFO - Request: GET http://127.0.0.1:7000/items/
+2025-04-04 10:44:48,820 - INFO - Headers: {'host': '127.0.0.1:7000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0', 'accept': 'application/json', 'accept-language': 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://127.0.0.1:7000/docs', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJqb2huZG9lIiwiZXhwIjoxNzQzNzgzMjg0fQ.fMupCgJmd_RCjY-ZR7483yUz6UkXHFzvLTSe-0XpGjc', 'dnt': '1', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'sec-gpc': '1', 'priority': 'u=0'}
+2025-04-04 10:44:48,820 - INFO - Body: 
+2025-04-04 10:44:48,824 - INFO - Response status: 200
+2025-04-04 10:44:48,824 - INFO - Process time: 0.00406 seconds
+2025-04-04 10:45:19,788 - INFO - Request: GET http://127.0.0.1:7000/items/4c9c2dde-4fd4-4fb5-b042-17e78d44b2aa
+2025-04-04 10:45:19,789 - INFO - Headers: {'host': '127.0.0.1:7000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0', 'accept': 'application/json', 'accept-language': 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://127.0.0.1:7000/docs', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJqb2huZG9lIiwiZXhwIjoxNzQzNzgzMjg0fQ.fMupCgJmd_RCjY-ZR7483yUz6UkXHFzvLTSe-0XpGjc', 'dnt': '1', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'sec-gpc': '1', 'priority': 'u=0'}
+2025-04-04 10:45:19,789 - INFO - Body: 
+2025-04-04 10:45:19,800 - INFO - Response status: 200
+2025-04-04 10:45:19,800 - INFO - Process time: 0.011604 seconds
+2025-04-04 10:45:30,260 - INFO - Request: PATCH http://127.0.0.1:7000/items/4c9c2dde-4fd4-4fb5-b042-17e78d44b2aa
+2025-04-04 10:45:30,260 - INFO - Headers: {'host': '127.0.0.1:7000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0', 'accept': 'application/json', 'accept-language': 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://127.0.0.1:7000/docs', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJqb2huZG9lIiwiZXhwIjoxNzQzNzgzMjg0fQ.fMupCgJmd_RCjY-ZR7483yUz6UkXHFzvLTSe-0XpGjc', 'content-type': 'application/json', 'content-length': '27', 'origin': 'http://127.0.0.1:7000', 'dnt': '1', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'sec-gpc': '1', 'priority': 'u=0'}
+2025-04-04 10:45:30,264 - INFO - Response status: 200
+2025-04-04 10:45:30,264 - INFO - Process time: 0.004094 seconds
+2025-04-04 10:46:04,936 - INFO - Request: PATCH http://127.0.0.1:7000/items/4c9c2dde-4fd4-4fb5-b042-17e78d44b2aa
+2025-04-04 10:46:04,936 - INFO - Headers: {'host': '127.0.0.1:7000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0', 'accept': 'application/json', 'accept-language': 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://127.0.0.1:7000/docs', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJqb2huZG9lIiwiZXhwIjoxNzQzNzgzMjg0fQ.fMupCgJmd_RCjY-ZR7483yUz6UkXHFzvLTSe-0XpGjc', 'content-type': 'application/json', 'content-length': '17', 'origin': 'http://127.0.0.1:7000', 'dnt': '1', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'sec-gpc': '1', 'priority': 'u=0'}
+2025-04-04 10:46:05,007 - INFO - Response status: 200
+2025-04-04 10:46:05,007 - INFO - Process time: 0.070935 seconds
+2025-04-04 10:46:24,289 - INFO - Request: GET http://127.0.0.1:7000/items/4c9c2dde-4fd4-4fb5-b042-17e78d44b2aa
+2025-04-04 10:46:24,289 - INFO - Headers: {'host': '127.0.0.1:7000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0', 'accept': 'application/json', 'accept-language': 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://127.0.0.1:7000/docs', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJqb2huZG9lIiwiZXhwIjoxNzQzNzgzMjg0fQ.fMupCgJmd_RCjY-ZR7483yUz6UkXHFzvLTSe-0XpGjc', 'dnt': '1', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'sec-gpc': '1', 'priority': 'u=0'}
+2025-04-04 10:46:24,289 - INFO - Body: 
+2025-04-04 10:46:24,291 - INFO - Response status: 200
+2025-04-04 10:46:24,291 - INFO - Process time: 0.002209 seconds
+2025-04-04 10:46:45,975 - INFO - Request: GET http://127.0.0.1:7000/users/carlos
+2025-04-04 10:46:45,975 - INFO - Headers: {'host': '127.0.0.1:7000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0', 'accept': 'application/json', 'accept-language': 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://127.0.0.1:7000/docs', 'dnt': '1', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'sec-gpc': '1', 'priority': 'u=0'}
+2025-04-04 10:46:45,975 - INFO - Body: 
+2025-04-04 10:46:45,977 - INFO - Response status: 200
+2025-04-04 10:46:45,977 - INFO - Process time: 0.002204 seconds
+2025-04-04 11:18:13,316 - INFO - Request: GET http://localhost:8000/docs
+2025-04-04 11:18:13,321 - INFO - Headers: {'host': 'localhost:8000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0', 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'accept-language': 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'dnt': '1', 'connection': 'keep-alive', 'upgrade-insecure-requests': '1', 'sec-fetch-dest': 'document', 'sec-fetch-mode': 'navigate', 'sec-fetch-site': 'none', 'sec-fetch-user': '?1', 'sec-gpc': '1', 'priority': 'u=0, i'}
+2025-04-04 11:18:13,322 - INFO - Body: 
+2025-04-04 11:18:13,374 - INFO - Response status: 200
+2025-04-04 11:18:13,374 - INFO - Process time: 0.05217 seconds
+2025-04-04 11:18:15,674 - INFO - Request: GET http://localhost:8000/openapi.json
+2025-04-04 11:18:15,675 - INFO - Headers: {'host': 'localhost:8000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0', 'accept': 'application/json,*/*', 'accept-language': 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://localhost:8000/docs', 'dnt': '1', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'sec-gpc': '1', 'priority': 'u=4'}
+2025-04-04 11:18:15,675 - INFO - Body: 
+2025-04-04 11:18:15,676 - INFO - Response status: 200
+2025-04-04 11:18:15,676 - INFO - Process time: 0.001065 seconds
+2025-04-04 11:18:26,826 - INFO - Request: GET http://localhost:7000/docs
+2025-04-04 11:18:26,826 - INFO - Headers: {'host': 'localhost:7000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0', 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'accept-language': 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'dnt': '1', 'connection': 'keep-alive', 'upgrade-insecure-requests': '1', 'sec-fetch-dest': 'document', 'sec-fetch-mode': 'navigate', 'sec-fetch-site': 'none', 'sec-fetch-user': '?1', 'sec-gpc': '1', 'priority': 'u=0, i'}
+2025-04-04 11:18:26,826 - INFO - Body: 
+2025-04-04 11:18:26,827 - INFO - Response status: 200
+2025-04-04 11:18:26,827 - INFO - Process time: 0.000325 seconds
+2025-04-04 11:18:27,154 - INFO - Request: GET http://localhost:7000/openapi.json
+2025-04-04 11:18:27,154 - INFO - Headers: {'host': 'localhost:7000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0', 'accept': 'application/json,*/*', 'accept-language': 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://localhost:7000/docs', 'dnt': '1', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'sec-gpc': '1', 'priority': 'u=4'}
+2025-04-04 11:18:27,154 - INFO - Body: 
+2025-04-04 11:18:27,225 - INFO - Response status: 200
+2025-04-04 11:18:27,225 - INFO - Process time: 0.070238 seconds
+2025-04-04 11:18:36,205 - INFO - Request: POST http://localhost:7000/token
+2025-04-04 11:18:36,205 - INFO - Headers: {'host': 'localhost:7000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0', 'accept': 'application/json, text/plain, */*', 'accept-language': 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://localhost:7000/docs', 'content-type': 'application/x-www-form-urlencoded', 'x-requested-with': 'XMLHttpRequest', 'authorization': 'Basic Og==', 'content-length': '51', 'origin': 'http://localhost:7000', 'dnt': '1', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'sec-gpc': '1', 'priority': 'u=0'}
+2025-04-04 11:18:36,206 - INFO - Body: grant_type=password&username=carlos&password=secret
+2025-04-04 11:18:36,561 - INFO - Response status: 200
+2025-04-04 11:18:36,561 - INFO - Process time: 0.35561 seconds
+2025-04-04 11:18:44,625 - INFO - Request: GET http://localhost:7000/items/
+2025-04-04 11:18:44,625 - INFO - Headers: {'host': 'localhost:7000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0', 'accept': 'application/json', 'accept-language': 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://localhost:7000/docs', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJjYXJsb3MiLCJleHAiOjE3NDM3ODUzMTZ9.jwCBY3ZqMl9h-dGgAWzlzDPt14tYFb0EgYcaI49yuB8', 'dnt': '1', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'sec-gpc': '1', 'priority': 'u=0'}
+2025-04-04 11:18:44,625 - INFO - Body: 
+2025-04-04 11:18:44,631 - INFO - Response status: 200
+2025-04-04 11:18:44,631 - INFO - Process time: 0.00599 seconds
+2025-04-04 11:19:08,880 - INFO - Request: GET http://localhost:7000/docs
+2025-04-04 11:19:08,881 - INFO - Headers: {'host': 'localhost:7000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0', 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'accept-language': 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'dnt': '1', 'connection': 'keep-alive', 'upgrade-insecure-requests': '1', 'sec-fetch-dest': 'document', 'sec-fetch-mode': 'navigate', 'sec-fetch-site': 'none', 'sec-fetch-user': '?1', 'sec-gpc': '1', 'priority': 'u=0, i'}
+2025-04-04 11:19:08,881 - INFO - Body: 
+2025-04-04 11:19:08,881 - INFO - Response status: 200
+2025-04-04 11:19:08,882 - INFO - Process time: 0.000534 seconds
+2025-04-04 11:19:09,060 - INFO - Request: GET http://localhost:7000/openapi.json
+2025-04-04 11:19:09,060 - INFO - Headers: {'host': 'localhost:7000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0', 'accept': 'application/json,*/*', 'accept-language': 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://localhost:7000/docs', 'dnt': '1', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'sec-gpc': '1', 'priority': 'u=4'}
+2025-04-04 11:19:09,060 - INFO - Body: 
+2025-04-04 11:19:09,082 - INFO - Response status: 200
+2025-04-04 11:19:09,083 - INFO - Process time: 0.022039 seconds
+2025-04-04 11:19:12,233 - INFO - Request: POST http://localhost:7000/token
+2025-04-04 11:19:12,233 - INFO - Headers: {'host': 'localhost:7000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0', 'accept': 'application/json, text/plain, */*', 'accept-language': 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://localhost:7000/docs', 'content-type': 'application/x-www-form-urlencoded', 'x-requested-with': 'XMLHttpRequest', 'authorization': 'Basic Og==', 'content-length': '51', 'origin': 'http://localhost:7000', 'dnt': '1', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'sec-gpc': '1', 'priority': 'u=0'}
+2025-04-04 11:19:12,233 - INFO - Body: grant_type=password&username=carlos&password=secret
+2025-04-04 11:19:12,483 - INFO - Response status: 200
+2025-04-04 11:19:12,483 - INFO - Process time: 0.24928 seconds
+2025-04-04 11:19:21,455 - INFO - Request: POST http://localhost:7000/predict-sales/
+2025-04-04 11:19:21,455 - INFO - Headers: {'host': 'localhost:7000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0', 'accept': 'application/json', 'accept-language': 'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://localhost:7000/docs', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJjYXJsb3MiLCJleHAiOjE3NDM3ODUzNTJ9.4v25JwLvsvuGuY7TNT-xrmGk-bhLch1ekMfMKhsVpm8', 'content-type': 'application/json', 'content-length': '8', 'origin': 'http://localhost:7000', 'dnt': '1', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'sec-gpc': '1', 'priority': 'u=0'}
+2025-04-04 11:19:21,455 - INFO - Body: [
+  50
+]
+2025-04-04 11:19:21,458 - INFO - Response status: 200
+2025-04-04 11:19:21,458 - INFO - Process time: 0.002785 seconds
+2025-04-04 18:34:40,731 - INFO - Request: GET http://testserver/
+2025-04-04 18:34:40,731 - INFO - Headers: {'host': 'testserver', 'accept': '*/*', 'accept-encoding': 'gzip, deflate', 'connection': 'keep-alive', 'user-agent': 'testclient'}
+2025-04-04 18:34:40,756 - INFO - Body: 
+2025-04-04 18:34:40,757 - INFO - Response status: 404
+2025-04-04 18:34:40,757 - INFO - Process time: 0.000505 seconds
+2025-04-04 18:48:40,127 - INFO - Request: GET http://testserver/
+2025-04-04 18:48:40,128 - INFO - Headers: {'host': 'testserver', 'accept': '*/*', 'accept-encoding': 'gzip, deflate', 'connection': 'keep-alive', 'user-agent': 'testclient'}
+2025-04-04 18:48:40,128 - INFO - Body: 
+2025-04-04 18:48:40,128 - INFO - Response status: 404
+2025-04-04 18:48:40,128 - INFO - Process time: 0.000424 seconds
+2025-04-04 18:55:50,071 - INFO - Request: GET http://testserver/
+2025-04-04 18:55:50,072 - INFO - Headers: {'host': 'testserver', 'accept': '*/*', 'accept-encoding': 'gzip, deflate', 'connection': 'keep-alive', 'user-agent': 'testclient'}
+2025-04-04 18:55:50,072 - INFO - Body: 
+2025-04-04 18:55:50,072 - INFO - Response status: 404
+2025-04-04 18:55:50,072 - INFO - Process time: 0.000273 seconds
+2025-04-04 18:55:50,167 - INFO - Request: POST http://testserver/token
+2025-04-04 18:55:50,167 - INFO - Headers: {'host': 'testserver', 'accept': '*/*', 'accept-encoding': 'gzip, deflate', 'connection': 'keep-alive', 'user-agent': 'testclient', 'content-length': '41', 'content-type': 'application/x-www-form-urlencoded'}
+2025-04-04 18:55:50,167 - INFO - Body: username=testuser&password=hashedpassword
+2025-04-04 18:55:50,202 - ERROR - Error: hash could not be identified
+2025-04-04 18:55:50,203 - INFO - Response status: 500
+2025-04-04 18:55:50,203 - INFO - Process time: 0.036007 seconds
+2025-04-04 19:04:22,573 - INFO - Request: GET http://testserver/
+2025-04-04 19:04:22,574 - INFO - Headers: {'host': 'testserver', 'accept': '*/*', 'accept-encoding': 'gzip, deflate', 'connection': 'keep-alive', 'user-agent': 'testclient'}
+2025-04-04 19:04:22,574 - INFO - Body: 
+2025-04-04 19:04:22,574 - INFO - Response status: 404
+2025-04-04 19:04:22,574 - INFO - Process time: 0.000307 seconds
+2025-04-04 19:05:02,596 - INFO - Request: GET http://testserver/
+2025-04-04 19:05:02,596 - INFO - Headers: {'host': 'testserver', 'accept': '*/*', 'accept-encoding': 'gzip, deflate', 'connection': 'keep-alive', 'user-agent': 'testclient'}
+2025-04-04 19:05:02,596 - INFO - Body: 
+2025-04-04 19:05:02,597 - INFO - Response status: 404
+2025-04-04 19:05:02,597 - INFO - Process time: 0.000338 seconds
+2025-04-04 19:05:02,602 - INFO - Request: POST http://testserver/token
+2025-04-04 19:05:02,603 - INFO - Headers: {'host': 'testserver', 'accept': '*/*', 'accept-encoding': 'gzip, deflate', 'connection': 'keep-alive', 'user-agent': 'testclient', 'content-length': '32', 'content-type': 'application/x-www-form-urlencoded'}
+2025-04-04 19:05:02,603 - INFO - Body: username=johndoe&password=secret
+2025-04-04 19:05:02,892 - INFO - Response status: 200
+2025-04-04 19:05:02,892 - INFO - Process time: 0.289166 seconds
+2025-04-04 19:05:02,896 - INFO - Request: POST http://testserver/token
+2025-04-04 19:05:02,896 - INFO - Headers: {'host': 'testserver', 'accept': '*/*', 'accept-encoding': 'gzip, deflate', 'connection': 'keep-alive', 'user-agent': 'testclient', 'content-length': '43', 'content-type': 'application/x-www-form-urlencoded'}
+2025-04-04 19:05:02,896 - INFO - Body: username=invaliduser&password=wrongpassword
+2025-04-04 19:05:02,900 - ERROR - Error: 401: Incorrect username or password
+2025-04-04 19:05:02,901 - INFO - Response status: 500
+2025-04-04 19:05:02,901 - INFO - Process time: 0.004529 seconds
