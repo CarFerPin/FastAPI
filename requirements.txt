@@ -1,3 +1,0 @@
-fastapi[standar] uvicorn
-pyjwt
-passlib[bcrypt]
